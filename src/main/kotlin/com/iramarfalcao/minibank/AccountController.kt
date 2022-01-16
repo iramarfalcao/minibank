@@ -15,7 +15,7 @@ class AccountController(
     fun getAll(): List<Account> = accountRepository.findAll()
 
     @GetMapping("/{id}")
-    fun getById(@PathVariable id: Long):ResponseEntity<Account> =
+    fun getById(@PathVariable id: Long): ResponseEntity<Account> =
         accountRepository.findById(id).map {
             ResponseEntity.ok(it)
         }.orElse(ResponseEntity.notFound().build())
