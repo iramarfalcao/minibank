@@ -1,4 +1,4 @@
-package com.iramarfalcao.minibank
+package com.iramarfalcao.minibank.model
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
